@@ -33,7 +33,7 @@ const reportSchema = new mongoose.Schema({
   });
 const Report = mongoose.model('Report', reportSchema, 'report');
 
-const reactAppBuildDir = path.resolve('C:/Users/tpalme14/Documents/5166/dev/finalProject/t72-react/build');
+const reactAppBuildDir = path.resolve('/var/www/final-project-T72/t72-react/build');
 app.use(express.static(reactAppBuildDir));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
