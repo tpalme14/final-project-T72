@@ -10,7 +10,7 @@ function Reports() {
     // Fetch the data from your API endpoint
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/report');
+        const response = await fetch('http://142.93.3.229:3000/api/report');
         const data = await response.json();
         setReportChartData(data); // Store the fetched chart data in state
       } catch (error) {

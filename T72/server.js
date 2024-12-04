@@ -9,7 +9,11 @@ const cors = require('cors');
 
 const app = express();
 const PORT = 3000;
-app.use(cors());
+app.use(cors({
+    origin: 'http://142.93.3.229',
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 // MongoDB connection
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -136,6 +140,6 @@ app.use(function(err, req, res, next) {
 });
 
 //start the server
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Serving on port ${PORT}`);
 });

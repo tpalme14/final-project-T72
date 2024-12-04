@@ -24,7 +24,7 @@ function Login({ onLogin }) {
     };
 
     try {
-      const response = await fetch('http://localhost:3000/api/login', {
+      const response = await fetch('http://142.93.3.229:3000/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
