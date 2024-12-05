@@ -4,7 +4,7 @@ const { expressjwt: exjwt } = require('express-jwt');
 const bodyParser = require('body-parser');
 const path = require('path');
 const mongoose = require('mongoose');
-const url = 'mongodb://t72:t72@142.93.3.229:27017/final_project';
+const url = 'mongodb://202480-Fall-2024-ITIS-5166-051:nvaeirgh8493tyq984fhnq3f9h8934yfh@142.93.3.229:27017/final_project';
 const cors = require('cors');
 
 const app = express();
